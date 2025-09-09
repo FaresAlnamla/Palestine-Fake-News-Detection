@@ -5,7 +5,6 @@ The increasing spread of misinformation in digital media presents a major challe
 This project aims to develop a machine learning model that classifies **Arabic news articles** as either **real** or **fake**, using natural language processing (NLP) techniques. 
 Our goal is to automate and enhance media verification by leveraging text-based features.
 
----
 
 ## 🗂️ Dataset Overview
 - **Rows**: 5,352 news articles  
@@ -49,7 +48,6 @@ Our goal is to automate and enhance media verification by leveraging text-based 
 | 🔽 Min  | 7        |
 | 🔼 Max  | 64,878   |
 
----
 
 ## 📊 Dataset Analysis
 
@@ -69,14 +67,14 @@ Our goal is to automate and enhance media verification by leveraging text-based 
 
 > ⚠️ Dataset is imbalanced — may affect recall for fake news.
 
----
+
 
 ## 💭 Opinion on Dataset Quality
 The dataset is fairly clean and well-labeled.  
 Tokenization and stopword removal improved preprocessing.  
 The imbalance remains a challenge but can be addressed in future work with SMOTE or class weighting.
 
----
+
 
 ## 🔁 Methodology Flow
 
@@ -86,7 +84,7 @@ We trained multiple ML models:
 - **Linear SVM** → Performs well with sparse TF-IDF features  
 - **Random Forest** → Captures non-linear patterns & avoids overfitting  
 
----
+
 
 ## 📈 Evaluation Results
 
@@ -102,14 +100,14 @@ We trained multiple ML models:
 - Achieved highest overall accuracy (88.8%)  
 - Balanced performance across fake & real labels  
 
----
+
 
 ## 🗣️ Discussion
 - Ensemble methods (Random Forest) outperformed linear models.  
 - TF-IDF bigram features improved sensitivity to context.  
 - Imbalance impacted minority class (fake) detection.  
 
----
+
 
 ## ✅ Conclusion & Future Work
 We successfully built a machine learning pipeline that classifies Arabic news with ~89% accuracy.
@@ -137,7 +135,7 @@ jupyter notebook
 
 Open `Fake News Detection Model.ipynb` and execute cells step by step.
 
----
+
 
 ## 📦 Dependencies
 - Python 3.11.9 
@@ -146,7 +144,7 @@ Open `Fake News Detection Model.ipynb` and execute cells step by step.
 - matplotlib, seaborn, plotly  
 - Jupyter Notebook  
 
----
+
 
 ## 📎 Appendices
 - 📁 Dataset: `cleaned_news_dataset.csv`  
@@ -154,6 +152,5 @@ Open `Fake News Detection Model.ipynb` and execute cells step by step.
 - 📊 Vectorizer: `TfidfVectorizer(max_features=5000, ngram_range=(1,2))`  
 - 📤 Best Model: `RandomForestClassifier(n_estimators=100, random_state=42)`  
 
----
 
 ✨ Built with data & code ❤️  
