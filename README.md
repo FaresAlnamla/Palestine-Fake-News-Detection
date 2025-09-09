@@ -119,20 +119,16 @@ We successfully built a machine learning pipeline that classifies Arabic news wi
 - Experiment with **deep learning** (e.g., BERT for Arabic)  
 - Deploy as a **real-time fake news detection app**  
 
----
+
 
 ## ⚙️ Installation & Usage
 
 ### Clone Repository
 ```bash
-git clone <repo-url>
-cd Fake-News-Detection
+git clone https://github.com/FaresAlnamla/Palestine-Fake-News-Detection.git
+cd Palestine-Fake-News-Detection
 ```
 
-### Install Requirements
-```bash
-pip install -r requirements.txt
-```
 
 ### Run Jupyter Notebook
 ```bash
@@ -144,7 +140,7 @@ Open `Fake News Detection Model.ipynb` and execute cells step by step.
 ---
 
 ## 📦 Dependencies
-- Python 3.x  
+- Python 3.11.9 
 - pandas, numpy  
 - scikit-learn  
 - matplotlib, seaborn, plotly  
